@@ -2,4 +2,4 @@
 
 ## McGrath H, Černeková M, Kolář MH, 2022
 
-The repository contains analyses scripts and exemplary input files for the atoms selection denoted "uL22+below".
+The repository contains input files for the molecular dynamics simulations, analyses scripts and exemplary output files for the atoms selection denoted "uL22+below".
