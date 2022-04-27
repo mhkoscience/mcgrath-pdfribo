@@ -1,0 +1,164 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (1000)
+;	On host: datel
+;	At date: Fri Aug  6 13:17:49 2021
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                    :-) GROMACS - gmx pdb2gmx, 2019.6 (-:
+;	
+;	Executable:   /home/mhk/Programs/gromacs/gromacs-2019.6/gcc-9.3/bin/gmx
+;	Data prefix:  /home/mhk/Programs/gromacs/gromacs-2019.6/gcc-9.3
+;	Working dir:  /home/mhk/W/PDF/WHOLE/BUILD
+;	Command line:
+;	  gmx pdb2gmx -f ribo.noions.confb.pdb -o ribo.noions.confb.H.pdb -ss -vsite hydrogens -ff amberRibo -water spce
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./amberRibo.ff/forcefield.itp"
+
+; Include chain topologies
+#include "TOPOL/topol_Protein_chain_0.itp"
+#include "TOPOL/topol_Protein_chain_1.itp"
+#include "TOPOL/topol_Protein_chain_2.itp"
+#include "TOPOL/topol_Protein_chain_3.itp"
+#include "TOPOL/topol_Protein_chain_4.itp"
+#include "TOPOL/topol_Protein_chain_5.itp"
+#include "TOPOL/topol_Protein_chain_6.itp"
+#include "TOPOL/topol_Protein_chain_7.itp"
+#include "TOPOL/topol_RNA_chain_A.itp"
+#include "TOPOL/topol_RNA_chain_B.itp"
+#include "TOPOL/topol_Protein_chain_C.itp"
+#include "TOPOL/topol_Protein_chain_D.itp"
+#include "TOPOL/topol_Protein_chain_E.itp"
+#include "TOPOL/topol_Protein_chain_F.itp"
+#include "TOPOL/topol_Protein_chain_G.itp"
+#include "TOPOL/topol_Protein_chain_H.itp"
+#include "TOPOL/topol_Protein_chain_I.itp"
+#include "TOPOL/topol_Protein_chain_J.itp"
+#include "TOPOL/topol_Protein_chain_K.itp"
+#include "TOPOL/topol_Protein_chain_L.itp"
+#include "TOPOL/topol_Protein_chain_M.itp"
+#include "TOPOL/topol_Protein_chain_N.itp"
+#include "TOPOL/topol_Protein_chain_O.itp"
+#include "TOPOL/topol_Protein_chain_P.itp"
+#include "TOPOL/topol_Protein_chain_Q.itp"
+#include "TOPOL/topol_Protein_chain_R.itp"
+#include "TOPOL/topol_Protein_chain_S.itp"
+#include "TOPOL/topol_Protein_chain_T.itp"
+#include "TOPOL/topol_Protein_chain_U.itp"
+#include "TOPOL/topol_Protein_chain_V.itp"
+#include "TOPOL/topol_Protein_chain_W.itp"
+#include "TOPOL/topol_Protein_chain_X.itp"
+#include "TOPOL/topol_Protein_chain_Y.itp"
+#include "TOPOL/topol_Protein_chain_Z.itp"
+#include "TOPOL/topol_RNA_chain_a.itp"
+#include "TOPOL/topol_Protein_chain_b.itp"
+#include "TOPOL/topol_Protein_chain_c.itp"
+#include "TOPOL/topol_Protein_chain_d.itp"
+#include "TOPOL/topol_Protein_chain_e.itp"
+#include "TOPOL/topol_Protein_chain_f.itp"
+#include "TOPOL/topol_Protein_chain_g.itp"
+#include "TOPOL/topol_Protein_chain_h.itp"
+#include "TOPOL/topol_Protein_chain_i.itp"
+#include "TOPOL/topol_Protein_chain_j.itp"
+#include "TOPOL/topol_Protein_chain_k.itp"
+#include "TOPOL/topol_Protein_chain_l.itp"
+#include "TOPOL/topol_Protein_chain_m.itp"
+#include "TOPOL/topol_Protein_chain_n.itp"
+#include "TOPOL/topol_Protein_chain_o.itp"
+#include "TOPOL/topol_Protein_chain_p.itp"
+#include "TOPOL/topol_Protein_chain_q.itp"
+#include "TOPOL/topol_Protein_chain_r.itp"
+#include "TOPOL/topol_Protein_chain_s.itp"
+#include "TOPOL/topol_Protein_chain_t.itp"
+#include "TOPOL/topol_Protein_chain_u.itp"
+#include "TOPOL/topol_RNA_chain_v.itp"
+#include "TOPOL/topol_RNA_chain_x.itp"
+#include "TOPOL/topol_Protein_chain_y.itp"
+
+; Include water topology
+#include "./amberRibo.ff/spce.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./amberRibo.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_0     1
+Protein_chain_1     1
+Protein_chain_2     1
+Protein_chain_3     1
+Protein_chain_4     1
+Protein_chain_5     1
+Protein_chain_6     1
+Protein_chain_7     1
+RNA_chain_A         1
+RNA_chain_B         1
+Protein_chain_C     1
+Protein_chain_D     1
+Protein_chain_E     1
+Protein_chain_F     1
+Protein_chain_G     1
+Protein_chain_H     1
+Protein_chain_I     1
+Protein_chain_J     1
+Protein_chain_K     1
+Protein_chain_L     1
+Protein_chain_M     1
+Protein_chain_N     1
+Protein_chain_O     1
+Protein_chain_P     1
+Protein_chain_Q     1
+Protein_chain_R     1
+Protein_chain_S     1
+Protein_chain_T     1
+Protein_chain_U     1
+Protein_chain_V     1
+Protein_chain_W     1
+Protein_chain_X     1
+Protein_chain_Y     1
+Protein_chain_Z     1
+RNA_chain_a         1
+Protein_chain_b     1
+Protein_chain_c     1
+Protein_chain_d     1
+Protein_chain_e     1
+Protein_chain_f     1
+Protein_chain_g     1
+Protein_chain_h     1
+Protein_chain_i     1
+Protein_chain_j     1
+Protein_chain_k     1
+Protein_chain_l     1
+Protein_chain_m     1
+Protein_chain_n     1
+Protein_chain_o     1
+Protein_chain_p     1
+Protein_chain_q     1
+Protein_chain_r     1
+Protein_chain_s     1
+Protein_chain_t     1
+Protein_chain_u     1
+RNA_chain_v         1
+RNA_chain_x         1
+Protein_chain_y     1
+SOL   603116
+MG    460
+KJ    4712
+ClJ   1527
+ZN    2
